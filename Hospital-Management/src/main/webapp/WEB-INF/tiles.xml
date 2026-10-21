@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+        
+<tiles-definitions>  
+ 
+    <!-- Base Define -->
+    <definition name="base.definition" 
+        template="/WEB-INF/layouts/classic.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="side" value="/WEB-INF/basefragments/_side.jsp" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />  
+    </definition>  
+ 
+ 	<!-- Home Page  -->
+    <definition name="home" extends="base.definition">  
+        <put-attribute name="title" value="Home" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_home.jsp" />  
+    </definition>    
+ 
+    <!-- Home Page  -->
+    <definition name="welcome" extends="base.definition">  
+        <put-attribute name="title" value="Welcome" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_welcome.jsp" />  
+    </definition> 
+    
+    <definition name="dashboard" extends="base.definition">  
+        <put-attribute name="title" value="Dashboard" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_dashboard.jsp" />  
+    </definition> 
+    
+     <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_login.jsp" />  
+    </definition>
+    
+    <definition name="signUp" extends="base.definition">  
+        <put-attribute name="title" value="User Registration" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_userRegister.jsp" />  
+    </definition>
+    
+     <definition name="doctor" extends="base.definition">  
+        <put-attribute name="title" value="Doctor" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_doctor.jsp" />  
+    </definition>
+    
+    <definition name="doctorList" extends="base.definition">  
+        <put-attribute name="title" value="Doctor List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_doctorList.jsp" />  
+    </definition>
+    
+     <definition name="receptionist" extends="base.definition">  
+        <put-attribute name="title" value="Receptionist" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_receptionist.jsp" />  
+    </definition>
+    
+    <definition name="receptionistList" extends="base.definition">  
+        <put-attribute name="title" value="Receptionist List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_receptionistList.jsp" />  
+    </definition>
+    
+    
+    <definition name="room" extends="base.definition">  
+        <put-attribute name="title" value="Room" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_room.jsp" />  
+    </definition>
+    
+    <definition name="roomList" extends="base.definition">  
+        <put-attribute name="title" value="Room List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_roomList.jsp" />  
+    </definition>
+    
+    
+       <definition name="insurance" extends="base.definition">  
+        <put-attribute name="title" value="Insurance" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_insurance.jsp" />  
+    </definition>
+    
+    
+    <definition name="patient" extends="base.definition">  
+        <put-attribute name="title" value="Patient Form" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_patient.jsp" />  
+    </definition>
+    
+    <definition name="patientList" extends="base.definition">  
+        <put-attribute name="title" value="Patient List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_patientList.jsp" />  
+    </definition>
+    
+    <definition name="insuranceList" extends="base.definition">  
+        <put-attribute name="title" value="Insurance List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_insuranceList.jsp" />  
+    </definition>
+  
+       <definition name="aboutUs" extends="base.definition">  
+        <put-attribute name="title" value="About Us" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_aboutUs.jsp" />  
+    </definition>
+    
+    <definition name="appointment" extends="base.definition">  
+        <put-attribute name="title" value="Appointment" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_appointment.jsp" />  
+    </definition>
+    
+    <definition name="appointmentList" extends="base.definition">  
+        <put-attribute name="title" value="Appointment List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_appointmentList.jsp" />  
+    </definition>
+    
+    
+      <definition name="allotRoom" extends="base.definition">  
+        <put-attribute name="title" value="Allot Room" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_allotRoom.jsp" />  
+    </definition>
+    
+    <definition name="allotRoomList" extends="base.definition">  
+        <put-attribute name="title" value="Allot Room List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_allotRoomList.jsp" />  
+    </definition>
+    
+     <definition name="bill" extends="base.definition">  
+        <put-attribute name="title" value="Bill" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_bill.jsp" />  
+    </definition>
+    
+    <definition name="billList" extends="base.definition">  
+        <put-attribute name="title" value="Bill List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_billList.jsp" />  
+    </definition>
+    
+    <definition name="patientSummery" extends="base.definition">  
+        <put-attribute name="title" value="Patient Summery" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_patientSummery.jsp" />  
+    </definition>
+    
+    <definition name="patientSummeryList" extends="base.definition">  
+        <put-attribute name="title" value="Patient Summery List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_patientSummeryList.jsp" />  
+    </definition>
+    
+    <definition name="contactUs" extends="base.definition">  
+        <put-attribute name="title" value="Contact Us" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_contactUs.jsp" />  
+    </definition>
+    
+    <definition name="payment" extends="base.definition">  
+        <put-attribute name="title" value="Payment" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_payment.jsp" />  
+    </definition>  
+    
+    <definition name="changePassword" extends="base.definition">  
+        <put-attribute name="title" value="Change Password" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_changePassword.jsp" />  
+    </definition>
+   
+     <definition name="myprofile" extends="base.definition">  
+        <put-attribute name="title" value="My Profile" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_myProfile.jsp" />  
+    </definition>
+    
+     <definition name="forgetPassword" extends="base.definition">  
+        <put-attribute name="title" value="Forget Password" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_forgetPassword.jsp" />  
+    </definition>
+    
+     
+   
+</tiles-definitions> 
